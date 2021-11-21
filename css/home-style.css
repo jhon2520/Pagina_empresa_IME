@@ -1,5 +1,5 @@
 *{
-    font-family: "poppins";
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,9 +8,14 @@
 :root{
     --font-color : #3b3b3b;
     --body-bg-color: #DED9C4;
-    --header-bg-color: #C9CCD5;
+    --header-bg-color: #DED9C4;
     --main-bg-gradient: radial-gradient(circle, rgba(230,225,225,1) 19%, rgba(227,228,207,1) 40%, #DED9C4 73%);
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background:var(--body-bg-color);
 }
@@ -58,7 +63,7 @@ hr{
         }
         .main-container .home-page .main-header .logo-section h1{
             color: var(--font-color);
-            font-weight: 900;
+            font-weight: 300;
         }
         /* .main-container .home-page .main-header .nav-section .nav-bar{
             background: red; 
@@ -78,13 +83,30 @@ hr{
             display: flex;
             justify-content: center;
             align-items: center;
-            color: var(--font-color);
-            font-weight: bolder;
             border-radius: 20px;
-            font-weight: 900;
-
-
+            
+            
+            
         }
+        .main-container .home-page .main-header .nav-section .nav-bar .nav-list li a{
+            color: var(--font-color);
+            font-weight: 300;
+            text-decoration: none;
+        }
+        .main-container .home-page .main-section .btn-subir{
+            background: #DED9C4;
+            width: 40px;
+            height: 40px;
+            position: fixed;
+            border-radius: 50%;
+            bottom: 30px;
+            right: 30px;
+        }
+        .main-container .home-page .main-section .btn-subir img{
+            width: 100%;
+        }
+
+
 
     .main-container .main-section{
         background: var(--main-bg-gradient);
@@ -149,8 +171,121 @@ hr{
         }
 
 
+/* NOSOTROS PAGE */
+
+    .main-container .nosotros-page{
+        height: 100vh;
+        width: 100%;
+        background: #C2FFF9;
+    }
+
+/* PRODUCTOS PAGE */
+
+    .main-container .productos-page{
+        height: 100vh;
+        width: 100%;
+        background: #DADDFC;
+    }
+
+/* PRODUCTOS PAGE */
+
+    .main-container .contacto-page{
+        height: 100vh;
+        width: 100%;
+        background: #EAEAEA;
+    }
 
 
 
 
 
+
+
+
+
+/* FOOTER */
+
+footer{
+    background: #404447;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 40px 10px;
+    color: #fff;
+}
+    footer .columna-1{
+        background: red;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 100%;
+        width: 33%;
+    }
+        footer .columna-1 .footer-set{
+            height: 25px;
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+        }
+
+        footer .columna-1 h3{
+            font-size: 12px;
+            margin-bottom: 15px;font-weight: 200;
+        }
+        
+        footer .columna-1 a{
+            font-size: 12px;
+            text-decoration: none;
+            color: white;
+            margin-bottom: 15px;font-weight: 200;
+        }
+
+        footer .columna-1 .logo{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        footer .columna-1 .logo img{
+            width: 10%;
+            margin-right: 10px;
+            
+        }
+
+        footer .columna-1 .logo h2{
+            font-weight: 300;
+        }
+
+
+
+
+
+
+    footer .columna-2{
+        background: yellow;
+        width: 33%;
+    }
+
+        footer .columna-2 hgroup{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            font-size: 12px;
+            font-weight: 200;
+            
+        }
+        footer .columna-2 hgroup h3{
+            margin-left: 40%;
+
+        }
+
+
+
+
+
+    footer .columna-3{
+        background: green;
+        width: 33%;
+    }

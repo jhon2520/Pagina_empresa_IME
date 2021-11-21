@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/home-style.css">
     <title>Home</title>
 </head>
 <body>
 
 
-    <div class="main-container"> 
+    <div  class="main-container"> 
         
+        <!-- HOME PAGE -->
         <div class="home-page">
-            <header class="main-header">
+            <header id="home"  class="main-header">
 
                 <!-- LOGO -->
                 <section class="logo-section">
@@ -25,11 +26,11 @@
                 <section class="nav-section">
                     <nav class="nav-bar">
                         <ul class="nav-list">
-                            <li><a href=""></a>Home</li>
-                            <li><a href=""></a>Nosotros</li>
-                            <li><a href=""></a>Productos</li>
-                            <li><a href=""></a>Carrito</li>
-                            <li><a href=""></a>Contacto</li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#nosotros">Nosotros</a></li>
+                            <li><a href="#productos">Productos</a></li>
+                            <li><a href="">Carrito</a></li>
+                            <li><a href="#contacto">Contacto</a></li>
                         </ul>
                     </nav>
                 </section>
@@ -52,14 +53,79 @@
                     <img src="../resources/img/main-img.jpg" alt="">
                 </div>
 
+                <div class="btn-subir">
+                    <a href="#home"><img src="../resources/img/subir.png" alt=""></a>
+                    
+                </div>
             </main>
+
+
         </div>
+        <hr>
 
+        <!-- NOSOTROS PAGE -->
 
+        <div id="nosotros" class="nosotros-page">
 
+        </div>
+        <hr>
+
+        <!-- PRODUCTOS PAGE -->
+
+        <div id="productos" class="productos-page">
+    
+        </div>
+        <hr>
 
         
+        <!-- CONTACTO PAGE -->
 
+        <div id="contacto" class="contacto-page">
+    
+        </div>
+        <hr>
+
+        <!-- FOOTEr -->
+        
+        <footer class="footer">
+            <div class="columna-1">
+                <div class="logo">
+                    <img src="../resources/img/logo.png" alt="">
+                    <h2>Nombre Empresa</h2>
+                </div>
+                <hr class="footer-sep" >
+                <h3>Informacion de contacto</h3>
+                <a href="">Politica de privacidad</a>
+            </div>
+            <div class="columna-2">
+                <hgroup>
+                    <h3>Mapa</h3>
+                    <h3>Galleria</h3>
+                    <h3>Servicios</h3>
+                    <h3>Soporte</h3>
+                    <h3>Copyright &copy; 2021</h3>
+                </hgroup>
+            </div>
+            <div class="columna-3">
+                <input type="text">
+                <a href="">Subscribirse</a>
+                <ul class="social_icon">
+                    <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                </ul>
+    
+            </div>
+    
+        </footer>
     </div>
+    
+    
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
