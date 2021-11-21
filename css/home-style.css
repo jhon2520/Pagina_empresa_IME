@@ -5,63 +5,150 @@
     box-sizing: border-box;
 }
 
+:root{
+    --font-color : #3b3b3b;
+    --body-bg-color: #DED9C4;
+    --header-bg-color: #C9CCD5;
+    --main-bg-gradient: radial-gradient(circle, rgba(230,225,225,1) 19%, rgba(227,228,207,1) 40%, #DED9C4 73%);
+}
 body{
-    background: rgb(187, 174, 174);
+    background:var(--body-bg-color);
+}
+
+hr{
+    height: 0.5px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
 }
 
 .main-container{
-    background: red;
+    background: #fff;
     margin: 0 5vw;
 }
 
 /* HOMEPAGE */
 
     .main-container .home-page{
-        background: green;
+        /* background: green; */
         height: 100vh;
     }
 
     .main-container .home-page .main-header{
-        background: yellow;
+        /* background: yellow; */
+        background-color: var(--header-bg-color);
         width: 100%;
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        height: 8%;
+        align-items: 56;
+        height: 60px;
 
     }
-    .main-container .home-page .main-header .logo-section{
+        .main-container .home-page .main-header .logo-section{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 21%;
+            height: 100%;
+            /* background-color: rebeccapurple; */
+        }
+        .main-container .home-page .main-header .logo-section a img{
+            width: 8vh;
+            height: 100%;
+            padding-top: 5px;
+        }
+        .main-container .home-page .main-header .logo-section h1{
+            color: var(--font-color);
+            font-weight: 900;
+        }
+        /* .main-container .home-page .main-header .nav-section .nav-bar{
+            background: red; 
+        } 
+        */
+        .main-container .home-page .main-header .nav-section .nav-bar .nav-list{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+        }
+        .main-container .home-page .main-header .nav-section .nav-bar .nav-list li{
+            /* background: #396EB0; */
+            padding: 10px;
+            margin: 5px;
+            width: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--font-color);
+            font-weight: bolder;
+            border-radius: 20px;
+            font-weight: 900;
+
+
+        }
+
+    .main-container .main-section{
+        background: var(--main-bg-gradient);
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 21%;
-        height: 100%;
-        background-color: rebeccapurple;
-    }
-    .main-container .home-page .main-header .logo-section a img{
-        width: 8vh;
-        height: 100%;
-        padding-top: 5px;
-    }
-    .main-container .home-page .main-header .logo-section h2{
-        color: #fff;
-    }
-    .main-container .home-page .main-header .nav-section .nav-bar{
-        background: red;
+        height: 92%;
 
     }
-    .main-container .home-page .main-header .nav-section .nav-bar .nav-list{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        list-style: none;
-    }
-    .main-container .home-page .main-header .nav-section .nav-bar .nav-list li{
-        background: green;
-        padding: 10px;
-        margin: 5px;
+        .main-container .main-section .main-inf{
 
-    }
+            /* background: red; */
+            max-width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+
+        }
+
+        .main-container .main-section .main-inf hgroup{
+            color: var(--font-color);
+        }
+        .main-container .main-section .main-inf hgroup h2{
+            font-weight: bolder;
+            font-size: 55px;
+            line-height: 90%;
+        }
+        .main-container .main-section .main-inf hgroup h3{
+            font-size: 15px;
+            margin-top: 5%;
+
+        }
+        .main-container .main-section .main-inf .btn{
+            text-decoration: none;
+            padding: 10px;
+            font-weight: 900;
+        }
+        .main-container .main-section .main-inf .main-btn{
+            background: #DF711B;
+            color: #fff;
+            border-radius: 20px;
+            margin-top: 20px;
+
+        }
+        .main-container .main-section .main-img{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background: rebeccapurple; */
+            height: 80%;
+            width: 50%;
+            max-width: 50%;
+
+
+        }
+
+        .main-container .main-section .main-img img{
+            width: 70%;
+            margin-right: 60px;
+        }
+
+
 
 
 
