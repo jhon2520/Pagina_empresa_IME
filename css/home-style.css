@@ -63,7 +63,7 @@ hr{
         }
         .main-container .home-page .main-header .logo-section h1{
             color: var(--font-color);
-            font-weight: 300;
+            font-weight: 400;
         }
         /* .main-container .home-page .main-header .nav-section .nav-bar{
             background: red; 
@@ -93,6 +93,13 @@ hr{
             font-weight: 300;
             text-decoration: none;
         }
+        .main-container .home-page .main-header .nav-section .nav-bar .nav-list li:hover{
+            background: rgba(0, 0, 0, 0.3);
+        }
+        .main-container .home-page .main-header .nav-section .nav-bar .nav-list li:hover>a{
+            color: #fff;
+            font-weight: 400;
+        }
         .main-container .home-page .main-section .btn-subir{
             background: #DED9C4;
             width: 40px;
@@ -101,6 +108,10 @@ hr{
             border-radius: 50%;
             bottom: 30px;
             right: 30px;
+            transition: 0.5s;
+        }
+        .main-container .home-page .main-section .btn-subir:hover{
+            transform: translateY(-10px);
         }
         .main-container .home-page .main-section .btn-subir img{
             width: 100%;
@@ -131,36 +142,47 @@ hr{
             color: var(--font-color);
         }
         .main-container .main-section .main-inf hgroup h2{
-            font-weight: bolder;
+            font-weight: 600;
             font-size: 55px;
             line-height: 90%;
         }
         .main-container .main-section .main-inf hgroup h3{
             font-size: 15px;
+            font-weight: 300;
             margin-top: 5%;
 
         }
-        .main-container .main-section .main-inf .btn{
+        .btn{
             text-decoration: none;
             padding: 10px;
             font-weight: 900;
+            transition: 0.5s;
         }
         .main-container .main-section .main-inf .main-btn{
             background: #DF711B;
             color: #fff;
             border-radius: 20px;
+            font-weight: 300;
             margin-top: 20px;
-
         }
+        .main-container .main-section .main-inf .main-btn:hover{
+            padding: 10px 20px;
+        }
+
+
         .main-container .main-section .main-img{
 
             display: flex;
             justify-content: center;
             align-items: center;
             /* background: rebeccapurple; */
-            height: 80%;
-            width: 50%;
+            height: 100%;
+            width: 60%;
             max-width: 50%;
+            background-image: url(../resources/img/blusas.jpg);
+            background-attachment: fixed;
+            clip-path: circle(40% at 50% 50%);
+            /* background: red; */
 
 
         }
@@ -168,6 +190,7 @@ hr{
         .main-container .main-section .main-img img{
             width: 70%;
             margin-right: 60px;
+            border-radius: 50%;
         }
 
 
@@ -176,8 +199,59 @@ hr{
     .main-container .nosotros-page{
         height: 100vh;
         width: 100%;
-        background: #C2FFF9;
+        background: var(--main-bg-gradient);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
     }
+
+    .main-container .nosotros-page .nosotros-container .circulo{
+        position: relative;
+        overflow: hidden;
+        margin-right: 30px;
+    }
+    .main-container .nosotros-page .nosotros-container .circulo img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .main-container .nosotros-page .nosotros-container .circulo.img-1{
+        width: 600px;
+        height: 600px;
+        float: left;
+        border-radius: 50%;
+        shape-outside: circle();
+    }
+
+    .main-container .nosotros-page .nosotros-container  .nosotros-texto h2{
+        margin-bottom: 10px;
+        text-align: justify;
+        color: var(--font-color);
+        font-weight: 600;
+        font-size: 55px;
+    }
+    .main-container .nosotros-page .nosotros-container  .nosotros-texto p{
+        text-align: justify;
+        color: var(--font-color);
+        font-size: 15px;
+        font-weight: 300;
+    }
+    .main-container .nosotros-page .nosotros-container  .nosotros-texto p:last-child{
+        margin-bottom: 60px;
+    }
+    .main-container .nosotros-page .nosotros-container .nosotros-btn{
+        color: #fff;
+        background: teal;
+        margin-top: 20px;
+        border-radius: 20px;
+        font-weight: 300;
+        transition: 0.5s;
+    }
+    .main-container .nosotros-page .nosotros-container .nosotros-btn:hover{
+        padding: 10px 20px;
+    }
+
+
 
 /* PRODUCTOS PAGE */
 
@@ -187,15 +261,98 @@ hr{
         background: #DADDFC;
     }
 
-/* PRODUCTOS PAGE */
-
+    .main-container .productos-page .enunciado-productos{
+        /* background: green; */
+        color: var(--font-color);
+    }
+    .main-container .productos-page .enunciado-productos h3:nth-child(1){
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .main-container .productos-page .enunciado-productos h3:nth-child(2){
+        font-size: 12px;
+        font-weight: 300;
+    }
     .main-container .contacto-page{
         height: 100vh;
         width: 100%;
         background: #EAEAEA;
     }
 
-
+    .main-container .productos-page .container-prod{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 100%;
+        background: var(--main-bg-gradient);
+    
+    }
+    
+    .main-container .productos-page .container-prod .card{
+        position: relative;
+        width: 250px;
+        height: 400px;
+        margin: 20px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;
+    }
+    .main-container .productos-page .container-prod .card:hover{
+        transform: translateY(-20px);
+    }
+    
+    .main-container .productos-page .container-prod .card .imgBx img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .main-container .productos-page .container-prod .card .content{
+        position: absolute;
+        bottom: -160px;
+        width: 100%;
+        height: 160px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+        flex-direction: column;
+        backdrop-filter: blur(15px);
+        box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        transition:  0.5s;
+    }
+    
+    .main-container .productos-page .container-prod .card:hover .content{
+    
+        bottom: 0px;
+    }
+    
+    .main-container .productos-page .container-prod .card .content h3{
+        color: var(--font-color);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 500;
+        font-size: 18px;
+        text-align: center;
+        margin: 20px 0 15px;
+        line-height: 1.1em;
+        transition: 0.5s;
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    .main-container .productos-page .container-prod .card:hover .content .contentBx h3{
+        opacity: 1;
+        transform: translateY(0px);
+    }
 
 
 
@@ -214,7 +371,7 @@ footer{
     color: #fff;
 }
     footer .columna-1{
-        background: red;
+        /* background: red; */
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -229,15 +386,19 @@ footer{
         }
 
         footer .columna-1 h3{
-            font-size: 12px;
-            margin-bottom: 15px;font-weight: 200;
+            font-size: 14px;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            font-weight: 400;
         }
         
         footer .columna-1 a{
-            font-size: 12px;
+            font-size: 11px;
             text-decoration: none;
             color: white;
-            margin-bottom: 15px;font-weight: 200;
+            margin-bottom: 15px;
+            font-weight: 200;
+
         }
 
         footer .columna-1 .logo{
@@ -254,16 +415,12 @@ footer{
         }
 
         footer .columna-1 .logo h2{
-            font-weight: 300;
+            font-weight: 800;
         }
 
 
-
-
-
-
     footer .columna-2{
-        background: yellow;
+        /* background: yellow; */
         width: 33%;
     }
 
@@ -278,14 +435,65 @@ footer{
         }
         footer .columna-2 hgroup h3{
             margin-left: 40%;
+            font-weight: 200;
 
+        }
+        footer .columna-2 hgroup h3:nth-child(1){
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+        footer .columna-2 hgroup h3:last-child{
+            margin-top: 25px; 
+            margin-left: 35%;
         }
 
 
-
-
-
     footer .columna-3{
-        background: green;
+        /* background: green; */
         width: 33%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: flex-start;
+        
     }
+
+    footer .columna-3 input{
+        margin-left: 40%;
+        border-radius: 10px;
+    }
+    footer .columna-3> a{
+        margin-left: 40%;
+        text-decoration: none;
+        padding: 5px;
+        background: #6C605E;
+        margin-top: 10px;
+        color: white;
+        font-size: 12px;
+        font-weight: 200;
+        border-radius: 10px;
+    }
+    
+    
+    footer .columna-3 .social-icon{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 10px 0;
+        /* background: red; */
+        list-style: none;
+        margin-top: 30px;
+        margin-left: 40%;
+    }
+    footer .columna-3 .social-icon li a{
+        font-size: 1.5em;
+        color: #fff;
+        margin: 0 10px;
+        display:  inline-block;
+        transition: 0.5s;
+        
+    }
+    footer .columna-3 .social-icon li a:hover{
+        transform: translateY(-10px);
+    }    
